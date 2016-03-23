@@ -3,8 +3,8 @@ from __future__ import unicode_literals
 from django.db import models
 
 class Question(models.Model):
-    quesiton_text = models.CharField(max_length=500)
-    pub_date = model.DateTimeField('date published')
+    question_text = models.CharField(max_length=500)
+    pub_date = models.DateTimeField('date published')
 
 class Choice(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE)
